@@ -1,0 +1,47 @@
+body {
+    margin: 0;
+}
+
+header {
+    background-color: rgb(127, 255, 212);
+
+}
+
+.height {
+    height: 7vh;
+}
+
+.fontWeigth {
+    font-weight: 600;
+}
+
+nav {
+    background-color: rgb(255, 99, 71);
+}
+
+#containerArticlesAndAside {
+    display: flex;
+
+}
+
+section {
+    background-color: rgb(255, 255, 0);
+    flex: 1;
+}
+
+article {
+    background-color: rgb(255, 165, 0);
+}
+
+.article {
+    margin: 0.2em 1em;
+}
+
+aside {
+    background-color: rgb(245, 245, 220);
+    width: 300px;
+}
+
+footer {
+    background-color: rgb(0, 255, 255);
+}

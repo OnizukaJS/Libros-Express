@@ -1,0 +1,88 @@
+/*Some necessary adjustments*/
+/*h1, body, html, main {
+  margin: 0;
+}*/
+*,
+*::after,
+*::before{
+  margin: 0;
+  padding: 0;
+}
+/*Import the font and set the default size*/
+html {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+}
+
+/*Header*/
+header{
+  background: url(../images/soup.jpg) no-repeat center center /cover;
+  height:100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header h1{
+  color: #fff;
+  font-size: 85px;
+}
+
+/*Main*/
+main{
+  padding: 30px 0;
+  width: 70%;
+  margin: auto;
+}
+
+.border{
+  border-bottom: 2px solid #b5b1b1;
+}
+
+/*Info Section*/
+
+.info{
+  padding-top: 30px;
+}
+
+.info > p {
+  font-size: 24px;
+}
+
+.info_img{
+  text-align: center;
+  margin: 40px 0 15px 0;
+}
+
+/*Content Sections*/
+.content{
+  padding: 20px 0;
+}
+
+.dashed {
+  list-style-type: none;
+  padding-left: 10px;
+  font-size: 20px;
+}
+.dashed > li:before {
+  content: "- ";
+  text-indent: -5px;
+}
+
+h3{
+  font-size: 22px;
+  padding: 20px 0;
+}
+
+.num {
+  counter-reset: list;
+  padding-left: 10px;
+  font-size: 20px;
+}
+.num > li {
+  list-style: none;
+}
+.num > li:before {
+  content: counter(list) ") ";
+  counter-increment: list;
+}

@@ -1,0 +1,149 @@
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+}
+
+.container{
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/*Header*/
+
+header > div {
+    float: left;
+    width: 33.33%;
+}
+
+.header-img{
+    background-image: url("https://via.placeholder.com/500x200");
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 200px;
+    /*Si no le damos un alto no se verá la imagen, ya que el contenedor es un div vacío.*/
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+    /*Sin el display table no funciona. Es un nuevo y moderno hack de clearfix, y este código se usa para la mayoría de las páginas web*/
+}
+
+.header-text {
+    padding-top: 35px;
+    line-height: 2;
+    text-align: center;
+}
+
+/*Main*/
+/*Nav*/
+
+nav{
+    margin: 50px 0;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #aeaeae;
+    /*establecemos padding-bottom y luego border-bottom, para que haya un espacio entre el texto y el borde*/
+}
+
+nav > ul > li{
+    display: inline-block;
+    padding: 0 15px;
+    font-size: 20px;
+}
+
+nav > ul > li:not(:last-child){
+    border-right: 1px solid #aeaeae;
+    /* :not(:last-child) para asignarle el borde derecho a todos los elementos li, menos al último*/
+}
+
+/*Sections*/
+
+.main-news{
+    padding-bottom: 50px;
+    border-bottom: 1px solid #aeaeae;
+}
+
+/*Sections latest news and news*/
+
+.latest-news .content-img{
+    background-image: url("https://via.placeholder.com/700x400");
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 400px;
+}
+
+.latest-news, .news {
+    display: inline-block;
+    width: 49.5%;
+    vertical-align: top;
+}
+
+.latest-news button {
+    border-radius: 28px;
+    border: 1px solid #999;
+    /* display: inline-block; */
+    cursor: pointer;
+    color: #000;
+    padding: 12px 0;
+    text-decoration: none;
+    width: 300px;
+    margin-bottom: 20px;
+}
+
+.latest-news .content-details{
+    width: 300px;
+    margin-top: 40px;
+    margin-left: 25px;
+}
+
+.news > article:not(:last-child){
+    padding-bottom: 45px;
+}
+
+.news > article {
+    padding-left: 20px;
+    display:table;   /*Para poder posicionar la img al lado del texto, y que el texto quede centrado verticalmente*/
+}
+
+.news > article > span {
+    /*Para poder posicionar la img al lado del texto, y que el texto quede centrado verticalmente*/
+    vertical-align: middle;
+    display: table-cell;
+}
+
+.news img {
+    margin-right: 25px;
+}
+
+/* Section other-news*/
+
+.other-news .other-news-img {
+    background-image: url("https://via.placeholder.com/350x150");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 150px;
+}
+
+.other-news > article {
+    float: left;
+    width: 25%;
+    padding: 50px 10px;
+    text-align: center;
+}
+
+.other-news > article p {
+    margin-top: 15px;
+}

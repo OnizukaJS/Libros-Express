@@ -1,0 +1,145 @@
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+}
+
+.container{
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/*Header*/
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-img{
+    background-image: url("https://via.placeholder.com/500x200");
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 200px;
+    width: 400px;
+}
+
+.header-text {
+    line-height: 2;
+    text-align: center;
+}
+
+/*Main*/
+/*Nav*/
+
+nav{
+    margin: 50px 0;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #aeaeae;
+}
+
+nav > ul{
+    display: flex;
+}
+
+nav > ul > li{
+    padding: 0 15px;
+    font-size: 20px;
+    list-style: none;
+}
+
+nav > ul > li:not(:last-child){
+    border-right: 1px solid #aeaeae;
+}
+
+/*Sections*/
+
+.main-news{
+    padding-top: 50px;
+    border-bottom: 1px solid #aeaeae;
+    display: flex;
+}
+
+/*Sections latest news and news*/
+
+.latest-news .content-img{
+    background-image: url("https://via.placeholder.com/700x400");
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 400px;
+}
+
+.latest-news, .news{
+    flex: 1;
+}
+
+.latest-news button {
+    border-radius: 28px;
+    border: 1px solid #999;
+    cursor: pointer;
+    color: #000;
+    padding: 12px 0;
+    text-decoration: none;
+    width: 300px;
+    margin-bottom: 20px;
+}
+
+.latest-news .content-details{
+    width: 300px;
+    margin-top: 40px;
+    margin-left: 25px;
+}
+
+.news-articles{
+    display: flex;
+    flex-direction: column;
+    padding-left: 30px;
+}
+
+.news > .news-articles > article{
+    display: flex;
+    align-items: center;
+}
+
+.news > .news-articles > article:not(:last-child){
+    padding-bottom: 50px;
+}
+
+.news > .news-articles img{
+    margin-right: 25px;
+    height: 175px;
+}
+
+/* Section other-news*/
+
+.other-news{
+    display: flex;
+    justify-content: space-between;
+}
+
+.other-news .other-news-img {
+    background-image: url("https://via.placeholder.com/350x150");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 150px;
+}
+
+.other-news > article{
+    padding: 50px 10px;
+    text-align: center;
+}
+
+.other-news > article p{
+    margin-top: 15px;
+}
